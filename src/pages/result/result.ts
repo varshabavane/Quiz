@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ResultPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @Component({
   selector: 'page-result',
   templateUrl: 'result.html',
 })
 export class ResultPage {
+
+  result;
+  counter;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -21,4 +19,12 @@ export class ResultPage {
     console.log('ionViewDidLoad ResultPage');
   }
 
-}
+  submit(){
+    "score: " + this.counter +" / 10";
+  }
+
+
+
+}  
+
+
