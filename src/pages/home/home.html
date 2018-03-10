@@ -7,277 +7,276 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
+  <ion-card >
     <ion-item>
 
-      <h2>1. Can you access coockie using javascript</h2>
+      <h2>1. Can you access cookie using javascript</h2>
 
     </ion-item>
-    <ion-item>
-      <ion-label>true</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+    <ion-list radio-group (ionChange)="disableQuest()">
+      <ion-item>
+        <ion-label>true</ion-label>
+        <ion-radio (ionSelect)="ansChck(1)" [disabled]="isDisable"></ion-radio>
+      </ion-item>
 
-    <ion-item>
-      <ion-label>false</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+      <ion-item>
+        <ion-label>false</ion-label>
+        <ion-radio (ionSelect)="ansChck(0)" [disabled]="isDisable"></ion-radio>
+      </ion-item>
+    </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <h2>2.Which of the following is the correct syntax to redirect a url using javascript </h2>
+      <h2>2. Which of the following is the correct syntax to redirect a url using javascript </h2>
 
     </ion-item>
-    <ion-item>
-      <ion-label>document.location="http://www.newlocation.com</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
 
-    <ion-item>
-      <ion-label>browser.locaton="http://www.newlocation.com</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+    <ion-list radio-group (ionChange)="disableQuest()">
+      <ion-item>
+        <ion-label>document.location="http://www.newlocation.com"</ion-label>
+        <ion-radio [disabled]="isDisable"></ion-radio>
+      </ion-item>
 
-    <ion-item>
-      <ion-label>window.locaton="http://www.newlocation.com</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+      <ion-item>
+        <ion-label>browser.locaton="http://www.newlocation.com"</ion-label>
+        <ion-radio [disabled]="isDisable"></ion-radio>
+      </ion-item>
 
-    <ion-item>
-      <ion-label>navigation.locaton="http://www.newlocation.com</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
+      <ion-item>
+        <ion-label>window.locaton="http://www.newlocation.com"</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>navigation.locaton="http://www.newlocation.com"</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+    </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <h2>3.Full form of DOM: </h2>
+      <h2>3. Full form of DOM: </h2>
 
     </ion-item>
-    <ion-item>
+    <ion-list radio-group>
+      <ion-item>
       <ion-label>Document Object Model</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>document Oriented Model</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>data object Model</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>data oriented Model</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+  </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <h2>4.Where is RAM Located </h2>
+      <h2>4. Where is RAM Located </h2>
 
     </ion-item>
+    <ion-list radio-group>
     <ion-item>
       <ion-label>Exapansion Board</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>External Drive</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Mother Board</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>All of the above</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+  </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <h2>5.Which of the following function of array objects sorts the element of an array? </h2>
+      <h2>5. Which of the following function of array objects sorts the element of an array? </h2>
 
     </ion-item>
+    <ion-list radio-group>
     <ion-item>
       <ion-label>toSource()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>sort()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>toString()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>unshift;</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+  </ion-list>
   </ion-card>
+
   <ion-card>
     <ion-item>
-      <h2>6.which of the following function of string object returns the primitive value of specified object? </h2>
+      <h2>6. which of the following function of string object returns the primitive value of specified object? </h2>
 
     </ion-item>
+    <ion-list radio-group>
     <ion-item>
-      <ion-label>toLacaleUppercase())</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-label>toLocaleUpperCase()</ion-label>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
-      <ion-label>toUppercase()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-label>toUpperCase()</ion-label>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>toString</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>valueOf()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+    </ion-list>
+
   </ion-card>
+
   <ion-card>
     <ion-item>
-      <h2>6.which of the following function of string object returns the primitive value of specified object? </h2>
+      <h2>7. which of the function is used to combine the text of two string & returns the new string</h2>
 
     </ion-item>
-    <ion-item>
-      <ion-label>toLocaleUppercase())</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>toUppercase()</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>toString</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>valueOf()</ion-label>
-      <ion-checkbox></ion-checkbox>
-    </ion-item>
-  </ion-card>
-  <ion-card>
-    <ion-item>
-      <h2>7.which of the function is used to combine the text of two string & returns the new string</h2>
-
-    </ion-item>
+    <ion-list radio-group>
     <ion-item>
       <ion-label>Merge()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>concat()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>add()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>append()</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+    </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <h2>URL Stands for </h2>
+      <h2>8. URL Stands for </h2>
 
     </ion-item>
+    <ion-list radio-group>
     <ion-item>
       <ion-label>Uniform Resource Locator</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Uniform Rsource Link</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Unified Registerd Link</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Uniform Registerd link</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+    </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
-      <h2>6.who was the father of Bluetooth</h2>
+      <h2>9. who was the father of Bluetooth</h2>
     </ion-item>
+    <ion-list radio-group>
     <ion-item>
-      <ion-label>Eriscon</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-label>Ericson</ion-label>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>charles Babbege</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Apple</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>SteveJobs</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+    </ion-list>
   </ion-card>
 
   <ion-card>
     <ion-item>
       <h2>10.Who was the father of Internet? </h2>
-
     </ion-item>
+    <ion-list radio-group>
     <ion-item>
       <ion-label>Steve Jobs</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>vint Cerf</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>artin Cooper</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
 
     <ion-item>
       <ion-label>Dennis Riche</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-radio></ion-radio>
     </ion-item>
+    </ion-list>
   </ion-card>
 
+  <button ion-button block outline (click)="submit()">Submit</button>
 </ion-content>
