@@ -8,23 +8,14 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'result.html',
 })
 export class ResultPage {
-
-  result;
-  counter;
-
+marks;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultPage');
+    console.log('ionViewDidLoad ResultPage: ' + this.navParams.get('marks'));
+    this.marks = this.navParams.get('marks')
   }
-
-  submit(){
-    "score: " + this.counter +" / 10";
-  }
-
-
-
 }  
 
 
