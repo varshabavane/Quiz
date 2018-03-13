@@ -7,27 +7,31 @@ import { ResultPage } from "../result/result";
 })
 export class HomePage {
   counter = 0;
-  isDisable;
-  ans = [21,22,23,24,25,26,27,28,29,30]
+  // isDisable: boolean = false;
+  
 
   constructor(public navCtrl: NavController) {}
 
-  ansChck(ans) {
-    console.log("checked value " + ans);
-
-    if (ans === 1) {
-      this.counter = this.counter + 1;
-    } else {
-      this.counter = this.counter;
-    }
+  ionViewWillEnter(){
+    this.counter = 0;
   }
 
-  disableQuest() {
-    this.isDisable = true;
+  ansChck(a) {
+    console.log("checked value " + a);
+    this.counter += a
+  }
+
+  disableQuest(event:any) {
+    console.log(event)
+    let a = event
+    a.classList.add('item-disabled');
+    // console.log(a.parentElement)
+    
+    
   }
 
   submit() {
-    // alert("score: " + this.counter + " / 10");
+     alert("score: " + this.counter + " / 10");
     this.navCtrl.push(ResultPage, {marks:this.counter}); 
   }
 }

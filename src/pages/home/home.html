@@ -12,7 +12,7 @@
 
       <h2>1. Can you access cookie using javascript</h2>
     </ion-item>
-    <ion-list radio-group (ionChange)="disableQuest()">
+    <ion-list radio-group (ionChange)="disableQuest(q1)" #q1>
       <ion-item>
         <ion-label>true</ion-label>
         <ion-radio (ionSelect)="ansChck(1)" ></ion-radio>
@@ -28,10 +28,10 @@
     <ion-item>
       <h2>2. Which of the following is the correct syntax to redirect a url using javascript </h2>
     </ion-item>
-    <ion-list radio-group (ionChange)="disableQuest()">
+    <ion-list radio-group (ionChange)="disableQuest(q2)" #q2>
       <ion-item>
         <ion-label>document.location="http://www.newlocation.com"</ion-label>
-        <ion-radio (ionSelect)="ansChck(1)" ></ion-radio>
+        <ion-radio (ionSelect)="ansChck(0)" ></ion-radio>
       </ion-item>
       <ion-item>
         <ion-label>browser.locaton="http://www.newlocation.com"</ion-label>
@@ -52,7 +52,7 @@
     <ion-item>
       <h2>3. Full form of DOM: </h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q3)" #q3>
       <ion-item>
         <ion-label>Document Object Model</ion-label>
         <ion-radio (ionSelect)="ansChck(1)" ></ion-radio>
@@ -76,7 +76,7 @@
     <ion-item>
       <h2>4. Where is RAM Located </h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q4)" #q4>
       <ion-item>
         <ion-label>Exapansion Board</ion-label>
         <ion-radio (ionSelect)="ansChck(0)" ></ion-radio>
@@ -100,7 +100,7 @@
     <ion-item>
       <h2>5. Which of the following function of array objects sorts the element of an array? </h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q5)" #q5>
       <ion-item>
         <ion-label>toSource()</ion-label>
         <ion-radio (ionSelect)="ansChck(0)" ></ion-radio>
@@ -124,7 +124,7 @@
     <ion-item>
       <h2>6. which of the following function of string object returns the primitive value of specified object? </h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q6)" #q6>
       <ion-item>
         <ion-label>toLocaleUpperCase()</ion-label>
         <ion-radio (ionSelect)="ansChck(1)" ></ion-radio>
@@ -148,7 +148,7 @@
     <ion-item>
       <h2>7. which of the function is used to combine the text of two string & returns the new string</h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q7)" #q7>
       <ion-item>
         <ion-label>Merge()</ion-label>
         <ion-radio (ionSelect)="ansChck(0)" ></ion-radio>
@@ -172,7 +172,7 @@
     <ion-item>
       <h2>8. URL Stands for </h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q8)" #q8>
       <ion-item>
         <ion-label>Uniform Resource Locator</ion-label>
         <ion-radio (ionSelect)="ansChck(1)" ></ion-radio>
@@ -196,7 +196,7 @@
     <ion-item>
       <h2>9. who was the father of Bluetooth</h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q9)" #q9>
       <ion-item>
         <ion-label>Ericson</ion-label>
         <ion-radio (ionSelect)="ansChck(1)" ></ion-radio>
@@ -220,7 +220,7 @@
     <ion-item>
       <h2>10.Who was the father of Internet? </h2>
     </ion-item>
-    <ion-list radio-group>
+    <ion-list radio-group (ionChange)="disableQuest(q10)" #q10>
       <ion-item>
         <ion-label>Steve Jobs</ion-label>
         <ion-radio (ionSelect)="ansChck(0)" ></ion-radio>
